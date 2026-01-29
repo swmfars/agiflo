@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agizot — Automation & n8n</title>
-  <meta name="description" content="Agizot: automation playground with n8n + AI helpers." />
+  <title>AGI ZOT</title>
+  <meta name="description" content="AGI ZOT — AI automation: n8n workflows, Moltbot assistants, cloud integrations." />
   <style>
     :root{
       --bg:#0b0f14; --card:#0f1621; --text:#e6edf3; --muted:#9aa4b2;
-      --line:#243244; --chip:#152235; --link:#e6edf3;
+      --line:#243244; --chip:#152235;
     }
     *{box-sizing:border-box}
     body{
-      margin:0; color:var(--text); background:radial-gradient(1200px 700px at 20% 0%, #122033 0%, var(--bg) 55%) fixed;
+      margin:0; color:var(--text);
+      background:radial-gradient(1200px 700px at 20% 0%, #122033 0%, var(--bg) 55%) fixed;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       line-height:1.55;
     }
     .wrap{max-width:980px;margin:0 auto;padding:42px 18px}
-    .top{
-      display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:28px;
-    }
+    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}
     .brand{display:flex;align-items:center;gap:12px}
     .logo{
       width:44px;height:44px;border-radius:14px;
@@ -28,39 +27,22 @@
     }
     .brand h1{font-size:18px;margin:0}
     .brand p{margin:0;color:var(--muted);font-size:13px}
-    .pill{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:10px 12px;border:1px solid var(--line);border-radius:999px;
-      background:rgba(15,22,33,.55); color:var(--muted); font-size:13px;
-    }
     .hero{
       border:1px solid var(--line); background:rgba(15,22,33,.55);
       border-radius:22px; padding:26px; box-shadow:0 24px 70px rgba(0,0,0,.35);
     }
     .hero h2{margin:0 0 10px;font-size:34px;letter-spacing:-.02em}
-    .hero p{margin:0 0 18px;color:var(--muted);max-width:68ch}
-    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:12px 14px;border-radius:14px;border:1px solid var(--line);
-      background:rgba(21,34,53,.55); color:var(--link); text-decoration:none;
-      font-weight:600;
-    }
-    .btn.primary{
-      background:linear-gradient(135deg,#2d7cff 0%,#7c3aed 55%,#ff6a3d 100%);
-      border:0;
-    }
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .hero p{margin:0;color:var(--muted);max-width:74ch}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
     .card{
       border:1px solid var(--line); background:rgba(15,22,33,.55);
       border-radius:18px; padding:16px;
     }
     .card h3{margin:0 0 6px;font-size:15px}
     .card p{margin:0;color:var(--muted);font-size:13px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
     .chip{font-size:12px;color:var(--muted);border:1px solid var(--line);background:rgba(21,34,53,.35);padding:6px 10px;border-radius:999px}
-    .footer{margin-top:18px;color:var(--muted);font-size:12px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-    .footer a{color:var(--muted)}
+    .footer{margin-top:18px;color:var(--muted);font-size:12px}
     @media (max-width:820px){
       .grid{grid-template-columns:1fr}
       .hero h2{font-size:28px}
@@ -74,55 +56,43 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
-          <h1>Agizot</h1>
-          <p>Automation + n8n + AI helpers</p>
+          <h1>AGI ZOT</h1>
+          <p>AI automation & workflow engineering</p>
         </div>
       </div>
-      <div class="pill">Planned: <strong style="color:#e6edf3;font-weight:600">n8n.agizot.com</strong></div>
     </div>
 
     <div class="hero">
-      <h2>Simple automations that actually work.</h2>
+      <h2>Automation. Orchestration. Execution.</h2>
       <p>
-        This site is the home of my automation experiments and tools.
-        The n8n instance will run on a dedicated subdomain, while this page stays lightweight and fast.
+        AGI ZOT builds AI automation: n8n workflows, assistants on Moltbot,
+        and cloud integrations for service orchestration.
       </p>
-
-      <div class="btns">
-        <a class="btn primary" href="https://n8n.agizot.com" rel="noopener">Open n8n (soon)</a>
-        <a class="btn" href="mailto:swmfars@gmail.com">Contact</a>
-      </div>
 
       <div class="grid">
         <div class="card">
           <h3>n8n workflows</h3>
-          <p>Automations, webhooks, data pipelines, and integrations.</p>
+          <p>Design, implementation, debugging, and maintenance of automations.</p>
         </div>
         <div class="card">
-          <h3>AI helpers</h3>
-          <p>Small assistants for parsing, routing, and summarizing tasks.</p>
+          <h3>AI assistants (Moltbot)</h3>
+          <p>Assistants, agents, routing, and data processing pipelines.</p>
         </div>
         <div class="card">
-          <h3>Notes & blog</h3>
-          <p>Short write-ups, checklists, and “what I learned” posts.</p>
+          <h3>Cloud integration</h3>
+          <p>Webhooks, connectors, and reliable service-to-service orchestration.</p>
         </div>
       </div>
 
       <div class="chips">
-        <span class="chip">Cloudflare Pages</span>
-        <span class="chip">VPS + Docker</span>
         <span class="chip">n8n</span>
-        <span class="chip">Webhook-first</span>
-        <span class="chip">Fast & minimal</span>
+        <span class="chip">workflows</span>
+        <span class="chip">AI automation</span>
+        <span class="chip">agents</span>
+        <span class="chip">cloud</span>
       </div>
 
-      <div class="footer">
-        <span>© <span id="y"></span> Agizot</span>
-        <span>
-          Domain: <a href="https://agizot.com" rel="noopener">agizot.com</a>
-          · Email: <a href="mailto:swmfars@gmail.com">swmfars@gmail.com</a>
-        </span>
-      </div>
+      <div class="footer">© <span id="y"></span> AGI ZOT</div>
     </div>
   </div>
 
